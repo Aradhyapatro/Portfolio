@@ -291,6 +291,37 @@ textarea {
   right: -5px;
 }
 
+.About-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about > hr {
+  width: 80%;
+}
+
+.flbx {
+  background-color: var(--previewShadow);
+  display: flex;
+  justify-content: space-around;
+}
+
+.images {
+  display: flex;
+  margin: 23px;
+  justify-content: space-around;
+}
+
+.image {
+  width: 230px;
+  height: 200px;
+}
 @media screen and (max-width: 1100px) {
   .main-container {
     width: 95%;
