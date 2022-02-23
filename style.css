@@ -337,13 +337,15 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: center;
+  align-items: center;
 }
 
 .card {
   text-align: center;
   width: 320px;
-  height: 70vh;
-  margin: 30px;
+  height: max-content;
+  margin: 30px auto;
+  padding-bottom: 40px;
   background-color: var(--secondaryColor);
   border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
