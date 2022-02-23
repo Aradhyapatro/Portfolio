@@ -14,12 +14,22 @@
 
   --previewbg: rgb(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
+
+  --buttonColor: black;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
+}
+
+body * {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 h1,
@@ -169,6 +179,10 @@ textarea {
   margin: 0 5px;
   padding: 15px;
   display: inline-block;
+}
+
+.right-nav a {
+  color: var(--primaryText);
 }
 
 .leftColumn {
@@ -356,12 +370,12 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   max-width: 600px;
   padding: 25px;
   margin-top: 25px;
   margin-bottom: 35px;
-  background-color: var(--previewShadow);
+  background-color: var(--primaryColor);
+  border: 1px solid var(--borderColor);
 }
 
 #input-form {
@@ -369,7 +383,7 @@ textarea {
 }
 
 #input-form > label {
-  line-height: normal;
+  line-height: 30px;
 }
 
 #input-form > input {
@@ -377,6 +391,23 @@ textarea {
   line-height: 30px;
   display: block;
   margin: 10px auto;
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+}
+
+.form > h3 {
+  text-align: center;
+}
+
+#but {
+  font-size: large;
+  line-height: 20px;
+  height: 45px;
+  width: 90%;
+  display: block;
+  margin: 20px auto;
+  background-color: var(--buttonColor);
+  color: var(--primaryColor);
 }
 
 #message {
