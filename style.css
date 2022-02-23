@@ -323,6 +323,35 @@ textarea {
   height: 200px;
 }
 
+.portfolioWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  width: 320px;
+  height: 70vh;
+  margin: 30px;
+  background-color: var(--secondaryColor);
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+
+.card > img {
+  width: 100%;
+  height: 45%;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+
 .form {
   display: block;
   margin-left: auto;
